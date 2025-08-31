@@ -106,7 +106,7 @@ parser.add_argument("--epochs", type=int, default=50, help="Number of epochs") #
 parser.add_argument("--train_batch", type=int, default=16, help="Batch size")
 parser.add_argument("--SourceLatents", type=str, default="Results/saveLatents_Source/Latents_Source.pt", help="Source's latent representations")
 parser.add_argument("--TargetLatents", type=str, default="Results/saveLatents_Target/Latents_Target.pt", help="Target's latent representations")
-parser.add_argument("--loss", type=str, choices=["MSE", "ContrastiveLoss", "TripletLoss", "UnifiedTripletAlignmentLoss"], default="MSE", help="Criterion to use for training")
+parser.add_argument("--loss", type=str, choices=["MSE", "ContrastiveLoss", "TripletLoss"], default="MSE", help="Criterion to use for training")
 parser.add_argument("--classes", type=int, default=10, help="number of classes")
 parser.add_argument("--domain", type=str, default="S2T", help="Domain translation")
 parser.add_argument("--device", type=int, default=0, help="Device to use")
